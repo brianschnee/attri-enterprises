@@ -563,7 +563,7 @@ main {
 	.dropdown-menu {
 		position: absolute;
 		left: 0;
-		top: calc(100% + 2.2rem);
+		top: calc(100% + 2.1rem);
 		z-index: -1;
 		background: rgba(243, 252, 255, 0.97);
 		width: 100%;
