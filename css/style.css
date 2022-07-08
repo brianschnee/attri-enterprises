@@ -170,7 +170,7 @@ main {
 
 .background-design {
 	background: rgba(0, 0, 0, 0.5);
-	backdrop-filter: blur(5rem);
+	/* backdrop-filter: blur(5rem); */
 	padding: 6rem 0;
 
 	display: flex;
