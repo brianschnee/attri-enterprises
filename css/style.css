@@ -21,6 +21,7 @@ body {
 
 a {
 	color: #3f9bf6;
+	/* color: black; */
 	text-decoration: none;
 }
 
@@ -308,21 +309,21 @@ main {
 	font-size: 4rem;
 	top: 50%;
 	transform: translateY(-50%);
-	color: rgba(255, 255, 255, 0.7);
+	color: rgba(255, 255, 255, 0.8);
 	cursor: pointer;
 	border-radius: 0.25rem;
 	padding: 0 0.5rem 0.5rem 0.5rem;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 .carousel-button:hover,
 .carousel-button:focus {
 	color: white;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 .carousel-button:focus {
-	outline: 0.1rem solid #3380cd;
+	outline: 0.2rem solid #3380cd;
 }
 
 .carousel-button.prev {
@@ -543,7 +544,7 @@ main {
 	}
 
 	#menu-icon {
-		padding-left: 2rem;
+		margin-left: 2rem;
 	}
 
 	.dropdown-button {
@@ -611,5 +612,28 @@ main {
 @media all and (max-width: 500px) {
 	#membership-logos img {
 		width: 4rem;
+	}
+
+	#primary-footer {
+		flex-direction: column;
+		text-align: center;
+		padding: 3rem 5%;
+	}
+
+	#footer-logo {
+		margin: 0 auto;
+	}
+
+	#contact {
+		display: none;
+	}
+
+	#contact-info {
+		padding-top: 2.5rem;
+		text-align: center;
+	}
+
+	#footer-copyright {
+		display: none;
 	}
 }
