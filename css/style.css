@@ -164,7 +164,7 @@ main {
 	padding: 8rem 0;
 	text-align: center;
 	color: white;
-	background: url('../assets/images/main-background2.png') center center
+	background: url('../assets/images/main-background.png') center center
 		no-repeat;
 	background-size: cover;
 }
@@ -233,7 +233,7 @@ main {
 
 .image-left,
 .image-right {
-	max-height: 80rem;
+	max-height: 100rem;
 }
 
 .about-info {
