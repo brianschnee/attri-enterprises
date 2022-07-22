@@ -538,6 +538,10 @@ main {
 }
 
 @media all and (max-width: 600px) {
+	html {
+		scroll-padding-top: 10rem;
+	}
+
 	.hide-mobile {
 		display: none;
 	}
