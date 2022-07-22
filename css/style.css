@@ -25,7 +25,7 @@ a {
 }
 
 .link-hover:hover {
-	color: #003a92;
+	/* color: #003a92; */
 	border-bottom: 0.1rem solid #003a92;
 }
 
@@ -293,6 +293,7 @@ main {
 	height: 100%;
 	object-fit: cover;
 	object-position: center;
+	border-radius: 2rem;
 }
 
 .slide[data-active] {
