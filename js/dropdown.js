@@ -19,5 +19,4 @@ document.addEventListener('click', (e) => {
 		if (dropdown === null) return
 		dropdown.classList.remove('active')
 	}
-
 })
