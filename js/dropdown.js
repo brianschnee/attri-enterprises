@@ -16,7 +16,7 @@ document.addEventListener('click', (e) => {
 		// if the active class isnt applied to the dropdown yet, ignore, otherwise remove the active class
 		const dropdown = document.querySelector('[data-dropdown].active');
 
-		if (dropdown === null) return;
-		dropdown.classList.remove('active');
+		if (dropdown !== null)
+			dropdown.classList.remove('active');
 	}
 });

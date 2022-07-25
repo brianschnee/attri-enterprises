@@ -580,12 +580,13 @@ main {
 	.dropdown-menu {
 		position: absolute;
 		left: 0;
-		top: calc(100% + 2.1rem);
+		top: calc(100% + 2.2rem);
 		z-index: -1;
 		background: rgba(243, 252, 255, 0.97);
 		width: 100%;
 		box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.1);
 		opacity: 0;
+		pointer-events: none;
 		transform: translateY(-1rem);
 		transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 	}
@@ -593,6 +594,7 @@ main {
 	.dropdown.active > .dropdown-button + .dropdown-menu {
 		opacity: 1;
 		transform: translateY(0);
+		pointer-events: auto;
 	}
 
 	.mobile-list li {
