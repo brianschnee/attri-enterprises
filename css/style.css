@@ -25,7 +25,7 @@ a {
 }
 
 .link-hover:hover {
-	/* color: #003a92; */
+	color: #003a92;
 	border-bottom: 0.1rem solid #003a92;
 }
 
@@ -451,7 +451,6 @@ main {
 
 #contact-info {
 	padding: 2rem;
-	/* background: #afe7f8; acecff */
 	border: 0.1rem solid #c8ddf1;
 	border-left: 0;
 	border-radius: 0 1rem 1rem 0;
