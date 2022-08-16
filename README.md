@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-  
+  <img src="./attri-preview.gif">
 </div>
 
 ## How It's Made:
