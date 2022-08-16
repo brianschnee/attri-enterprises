@@ -45,8 +45,10 @@
 
 	<body>
 		<header id="primary-header" class="horizontal-padding">
+			<!-- Includes all navigation links and dropdown on mobile -->
 			<nav>
 				<ul id="nav-list">
+					<!-- Company Logo -->
 					<li>
 						<a id="attri" href="index.html">
 							<img
@@ -59,6 +61,7 @@
 							</span>
 						</a>
 					</li>
+					<!-- Profile, History, Projects and Awards link to respective part of webpage -->
 					<li>
 						<ul id="inner-list">
 							<li class="nav-padding hide-mobile">
@@ -93,10 +96,11 @@
 								<a
 									id="contact-btn"
 									class="nav-link hide-mobile"
-									href="#contact"
+									href="#contact-info"
 									>Contact</a
 								>
 
+								<!-- Dropdown will appear on mobile and replace items on Navbar, functionality in js/dropdown.js -->
 								<div class="dropdown-container">
 									<div
 										class="dropdown"
@@ -145,7 +149,7 @@
 												<li>
 													<a
 														class="link-hover"
-														href="#contact"
+														href="#contact-info"
 														>Contact</a
 													>
 												</li>
@@ -161,6 +165,7 @@
 		</header>
 
 		<div class="background-img-container">
+			<!-- Includes content for main section under Navbar -->
 			<main>
 				<div class="background-design">
 					<img
@@ -176,6 +181,7 @@
 				</div>
 			</main>
 
+			<!-- Includes company profile text -->
 			<section id="profile" class="section-text horizontal-padding">
 				<div class="row center neumorphism image-right">
 					<div class="about-info">
@@ -213,6 +219,7 @@
 				</div>
 			</section>
 
+			<!-- Includes the history of Attri Enterprises -->
 			<section id="history" class="section-text horizontal-padding">
 				<div class="row center reverse neumorphism image-left">
 					<div class="about-info">
@@ -249,19 +256,24 @@
 				</div>
 			</section>
 
+			<!-- Includes Attri Enterprises projects. Buttons will move through a carousel of slides and display individual projects. -->
 			<section
 				id="projects"
 				class="horizontal-padding"
 				aria-label="Project Carousel"
 			>
 				<h2 id="projects-title" class="section-title">Projects</h2>
+
+				<!-- Project Carousel, functionality in js/carousel.js -->
 				<div class="carousel neumorphism" data-carousel>
+					<!-- Previous slide button -->
 					<button
 						class="carousel-button prev"
 						data-carousel-button="prev"
 					>
 						&#8249;
 					</button>
+					<!-- Next slide button -->
 					<button
 						class="carousel-button next"
 						data-carousel-button="next"
@@ -269,10 +281,11 @@
 						&#8250;
 					</button>
 
+					<!-- Project slides. Template for adding a new project provided at the bottom of this <ul> -->
 					<ul data-slides>
 						<li class="slide" data-active>
 							<h3 class="project-title">
-								Chelsea, NY
+								NYC Department of Sanitation - Chelsea, NY
 							</h3>
 							<img
 								src="./assets/projects/proj-3.jpg"
@@ -281,7 +294,7 @@
 						</li>
 						<li class="slide">
 							<h3 class="project-title">
-								Betsy Head Park, Brownville, NY
+								NYC Department of Parks & Recreation - Betsy Head Park, Brownville, NY
 							</h3>
 							<img
 								src="./assets/projects/proj-8.jpg"
@@ -290,7 +303,7 @@
 						</li>
 						<li class="slide">
 							<h3 class="project-title">
-								Astoria, NY
+								Con Edison - Astoria, NY
 							</h3>
 							<img
 								src="./assets/projects/proj-9.jpg"
@@ -299,7 +312,7 @@
 						</li>
 						<li class="slide">
 							<h3 class="project-title">
-								Staten Island, NY
+								NYC Department of Parks & Recreation - Staten Island, NY
 							</h3>
 							<img
 								src="./assets/projects/proj-10.jpg"
@@ -308,7 +321,7 @@
 						</li>
 						<li class="slide">
 							<h3 class="project-title">
-								Astoria, NY
+								Con Edison - Astoria, NY
 							</h3>
 							<img
 								src="./assets/projects/proj-7.jpg"
@@ -317,7 +330,7 @@
 						</li>
 						<li class="slide">
 							<h3 class="project-title">
-								Roosevelt Island, NY
+								Roosevelt Island Operating Corporation - Roosevelt Island, NY
 							</h3>
 							<img
 								src="./assets/projects/proj-6.jpg"
@@ -326,20 +339,39 @@
 						</li>
 						<li class="slide">
 							<h3 class="project-title">
-								Corona, NY
+								Con Edison - Corona, NY
 							</h3>
 							<img
 								src="./assets/projects/proj-5.jpg"
 								alt="Roofing Project Image"
 							/>
 						</li>
+						<!-- 
+							Follow this template for adding new projects to webpage (do not delete this comment)
+
+							1. Copy paste the <li> below, outside of the commented code within the <ul>.
+							2. Replace "PROJECT-INFO-HERE" inside of the <h3> with a description of a project in the following format "Con Edison - Corona, NY"
+							3. Replace "PROJECT-IMAGE-NAME" with the file name of an image you will have to store in the projects folder within the assets folder. (ie ./assets/projects/example-project.png)
+
+							<li class="slide">
+								<h3 class="project-title">
+									PROJECT-INFO-HERE
+								</h3>
+								<img
+									src="./assets/projects/PROJECT-IMAGE-NAME"
+									alt="Roofing Project Image"
+								/>
+							</li>
+						-->
 					</ul>
 				</div>
 			</section>
 
+			<!-- Includes a list of Attri Awards -->
 			<section id="awards" class="column center horizontal-padding">
 				<h2 class="section-title">Awards Received</h2>
 
+				<!-- Awards that have links must include the class "link-hover" within the <a> in order to receive proper styling. Awards without links may be listed in <span> such as the Safety Award, with the class "color-black" -->
 				<ul class="award-list">
 					<li class="award-list-margin">
 						<p>
@@ -355,7 +387,7 @@
 					</li>
 					<li class="award-list-margin">
 						<p>
-							<span class="award safety-award">
+							<span class="color-black">
 								Safety Award
 							</span>
 							–
@@ -382,6 +414,7 @@
 				</ul>
 			</section>
 
+			<!-- Includes a collection of Attri Enterprises Certifications -->
 			<section id="certifications" class="horizontal-padding">
 				<h2 class="section-title">Certified Roofing Systems</h2>
 
@@ -401,6 +434,7 @@
 				</div>
 			</section>
 
+			<!-- Includes a collection of Attri Enterprises Memberships -->
 			<section id="memberships" class="horizontal-padding">
 				<h2 class="section-title">Associations and Memberships</h2>
 
@@ -433,7 +467,9 @@
 			</section>
 		</div>
 
+		<!-- Includes Contact Information, and Footer Text -->
 		<footer id="primary-footer" class="horizontal-padding">
+			<!-- Left portion of footer - includes Attri logo and info -->
 			<section class="column">
 				<img
 					id="footer-logo"
@@ -448,7 +484,10 @@
 					>&copy; Copyright 2022 Attri Enterprises</span
 				>
 			</section>
+
+			<!-- Right portion of footer - includes google map and contact information -->
 			<div class="row footer-neumorphism">
+				<!-- Google Maps Location -->
 				<iframe
 					id="map"
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1598792806067!2d-73.9394063!3d40.7144968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2595386ba027b%3A0x3ca7d28d840b6571!2sAttri%20Enterprises!5e0!3m2!1sen!2sus!4v1655103489470!5m2!1sen!2sus"
@@ -456,6 +495,7 @@
 					loading="lazy"
 					referrerpolicy="no-referrer-when-downgrade"
 				></iframe>
+				<!-- Contact Information -->
 				<section id="contact-info">
 					<h3 id="contact">Contact</h3>
 					<ul class="footer-list">
@@ -466,7 +506,7 @@
 							</p>
 						</li>
 						<li class="footer-list-margin">
-							<a href="tel:718-486-7395">(718)-486-7395</a>
+							<a class="link-hover" href="tel:718-486-7395">(718)-486-7395</a>
 						</li>
 						<li>
 							<a

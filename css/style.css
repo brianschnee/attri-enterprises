@@ -25,7 +25,7 @@ a {
 }
 
 .link-hover:hover {
-	/* color: #003a92; */
+	color: #003a92;
 	border-bottom: 0.1rem solid #003a92;
 }
 
@@ -46,10 +46,13 @@ li {
 }
 
 .background-img-container {
-	background: url('../assets/images/attri-opacity.png') center center
-		no-repeat;
+	background: url('../assets/images/attri-opacity.png') center center no-repeat;
 	background-size: cover;
 	width: 100%;
+}
+
+.color-black {
+	color: black;
 }
 /*
 ================= Layout =================
@@ -164,14 +167,12 @@ main {
 	padding: 8rem 0;
 	text-align: center;
 	color: white;
-	background: url('../assets/images/main-background.png') center center
-		no-repeat;
+	background: url('../assets/images/main-background.png') center center no-repeat;
 	background-size: cover;
 }
 
 .background-design {
 	background: rgba(0, 0, 0, 0.5);
-	/* backdrop-filter: blur(5rem); */
 	padding: 6rem 0;
 
 	display: flex;
@@ -270,11 +271,11 @@ main {
 	text-align: center;
 	font-size: 2rem;
 	font-weight: 300;
+	line-height: 1.15;
 }
 
 .carousel {
-	width: 100%;
-	height: 80vh;
+	width: 100%; height: 80vh;
 	border-radius: 2rem;
 	position: relative;
 }
@@ -289,8 +290,7 @@ main {
 
 .slide > img {
 	display: block;
-	width: 100%;
-	height: 100%;
+	width: 100%; height: 100%;
 	object-fit: cover;
 	object-position: center;
 	border-radius: 2rem;
@@ -349,10 +349,6 @@ main {
 
 .award {
 	color: #3f9bf6;
-}
-
-.safety-award {
-	color: black;
 }
 
 .award-presenter {
@@ -440,8 +436,7 @@ main {
 /* left-side of footer */
 
 #map {
-	width: 225px;
-	height: 175px;
+	width: 225px; height: 175px;
 	border: 0.1rem solid #c8ddf1;
 	border-radius: 1rem 0 0 1rem;
 }
@@ -455,7 +450,6 @@ main {
 
 #contact-info {
 	padding: 2rem;
-	/* background: #afe7f8; acecff */
 	border: 0.1rem solid #c8ddf1;
 	border-left: 0;
 	border-radius: 0 1rem 1rem 0;
@@ -542,6 +536,10 @@ main {
 }
 
 @media all and (max-width: 600px) {
+	html {
+		scroll-padding-top: 10rem;
+	}
+
 	.hide-mobile {
 		display: none;
 	}
@@ -581,12 +579,13 @@ main {
 	.dropdown-menu {
 		position: absolute;
 		left: 0;
-		top: calc(100% + 2.1rem);
+		top: calc(100% + 2.2rem);
 		z-index: -1;
 		background: rgba(243, 252, 255, 0.97);
 		width: 100%;
 		box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.1);
 		opacity: 0;
+		pointer-events: none;
 		transform: translateY(-1rem);
 		transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 	}
@@ -594,6 +593,7 @@ main {
 	.dropdown.active > .dropdown-button + .dropdown-menu {
 		opacity: 1;
 		transform: translateY(0);
+		pointer-events: auto;
 	}
 
 	.mobile-list li {
